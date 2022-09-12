@@ -47,7 +47,7 @@ function copyurl(id, attr) {
   }
 
   try {
-    navigator.clipboard.writeText("https://" + target.innerText);
+    navigator.clipboard.writeText(target.innerText);
     console.log('Page URL copied to clipboard');
   } catch (err) {
     console.error('Failed to copy: ', err);
